@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardMedia } from '@mui/material';
+import { Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia } from '@mui/material';
 
 export default function Home() {
     return (
@@ -26,6 +26,14 @@ export default function Home() {
                         kann.
                     </p>
                 </CardContent>
+            </Card>
+            <Card sx={{ my: '1em' }}>
+                <CardMedia
+                    component="video"
+                    image="/video.mp4"
+                    autoPlay
+                    controls
+                />
             </Card>
         </>
     );
